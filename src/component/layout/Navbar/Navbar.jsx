@@ -10,6 +10,7 @@ import {
 import { Links } from "../../../constant/links";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuDrawer from "../MenuDrawer";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,13 +24,14 @@ const Navbar = () => {
       <AppBar
         position="static"
         elevation={0}
+        px={0}
         sx={{
-          backgroundColor: "transparent",
+          backgroundColor: "primary.100",
           borderBottom: "1px solid rgba(0, 0, 0, 0.22)",
-          padding: { xs: 0, sm: 0, md: "12px" },
+          paddingY: { xs: 0, sm: 0, md: "12px" },
         }}
       >
-        <Toolbar>
+        <SectionContainer>
           <Stack
             direction={"row"}
             width={"100%"}
@@ -62,7 +64,7 @@ const Navbar = () => {
                     fontSize: 16,
                   }}
                 >
-                  {link.name}
+                  <Typography>{link.name}</Typography>
                 </Button>
               ))}
             </Stack>
@@ -70,8 +72,6 @@ const Navbar = () => {
               variant="contained"
               disableElevation
               sx={{
-                backgroundColor: "#7D67FD",
-                borderRadius: "8px",
                 padding: "12px 20px",
                 textTransform: "capitalize",
                 display: { xs: "none", sm: "none", md: "flex" },
@@ -95,7 +95,7 @@ const Navbar = () => {
               <MenuIcon sx={{ fontSize: 35 }} />
             </IconButton>
           </Stack>
-        </Toolbar>
+        </SectionContainer>
       </AppBar>
       <MenuDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} />
     </>
