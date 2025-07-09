@@ -9,7 +9,7 @@ const SectionCompaniesHome =()=>{
             <SectionContainer>
                 <SectionCompanies
             nameSection={
-                    <>Trusted by Greatest Companies</>
+                    <>Trusted by Greatest Companies </>
             }
             styleSectionCompanies={{
                 display:"flex",
