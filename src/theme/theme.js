@@ -21,6 +21,9 @@ export const theme = createTheme({
     h3: {
       fontFamily: '"Poppins", sans-serif',
     },
+    h5: {
+      fontFamily: '"Poppins", sans-serif',
+    },
     body1: {
       fontFamily: '"Roboto", sans-serif',
     },
