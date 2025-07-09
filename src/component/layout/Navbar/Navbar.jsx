@@ -29,6 +29,7 @@ const Navbar = () => {
           backgroundColor: "primary.100",
           borderBottom: "1px solid rgba(0, 0, 0, 0.22)",
           paddingY: { xs: 0, sm: 0, md: "12px" },
+          boxShadow: "0px 0px 8.2px rgba(0, 0, 0, 0.12)",
         }}
       >
         <SectionContainer>

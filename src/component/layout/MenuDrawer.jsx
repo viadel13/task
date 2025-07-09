@@ -12,7 +12,11 @@ import List from "@mui/material/List";
 
 const MenuDrawer = ({ isOpen, toggleDrawer }) => {
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation">
+    <Box
+      sx={{ width: 250, height: "100%" }}
+      role="presentation"
+      bgcolor={"white"}
+    >
       <Stack p={2}>
         <img src={"./logo/taskdev.png"} alt="taskdev" width="140" height="38" />
       </Stack>

@@ -1,0 +1,110 @@
+import { Button, Stack, Typography } from "@mui/material";
+import HeroSection from "../../common/HeroSection/HeroSection";
+import imgHeroHome from "../../../assets/images/imgHeroHome.png";
+import SectionContainer from "../../layout/SectionContainer/SectionContainer";
+import SmartImage from "../../common/SmartImage/SmartImage";
+import CustomerReviews from "../../Cards/CustomerReviews/CustomerReviews";
+
+const HeroHome = () => {
+  return (
+    <Stack
+      sx={{
+        paddingY: { xs: 4, sm: 4, md: 8 },
+      }}
+    >
+      <SectionContainer>
+        <HeroSection
+          title={
+            <Typography
+              variant={"h3"}
+              color={"secondary.main"}
+              fontWeight={"bold"}
+              sx={{
+                textAlign: { xs: "center", sm: "center", md: "start" },
+                fontSize: { xs: 40, sm: 48 },
+              }}
+            >
+              Organise your day today life with ease
+            </Typography>
+          }
+          desc={
+            <Typography
+              variant={"body1"}
+              color={"secondary.main"}
+              mt={2}
+              sx={{
+                color: "text.A100",
+                textAlign: { xs: "center", sm: "center", md: "start" },
+              }}
+            >
+              Discover TaskDev , your intelligent personal assistant designed to
+              simplify task management. Whether you're juggling work, study or
+              everyday tasks, TaskDev helps you stay organised, focused and in
+              control, all on one intuitive platform
+            </Typography>
+          }
+          button={
+            <Stack
+              direction={"row"}
+              spacing={2}
+              sx={{
+                justifyContent: { xs: "center", sm: "center", md: "start" },
+              }}
+            >
+              <Button
+                variant={"contained"}
+                disableElevation
+                sx={{
+                  backgroundColor: "primary.A600",
+                }}
+              >
+                Download now
+              </Button>
+              <Button
+                disableElevation
+                variant={"outlined"}
+                sx={{
+                  color: "text.secondary",
+                  borderColor: "primary.A600",
+                }}
+              >
+                Watch Video
+              </Button>
+            </Stack>
+          }
+          stylesStackLeft={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: { xs: "centre", sm: "center", md: "flex-start" },
+            gap: 2,
+          }}
+          stylesHeroSection={{
+            display: "flex",
+            flexDirection: "row",
+            gap: 10,
+          }}
+          stylesStackRight={{
+            position: "relative",
+            display: { xs: "none", sm: "none", md: "flex" },
+            height: "480px",
+            alignItems: "center",
+          }}
+          img={
+            <Stack>
+              <SmartImage
+                src={imgHeroHome}
+                alt="Photo d'exemple"
+                width={550}
+                height={"auto"}
+                sizes="(max-width: 600px) 400px, 800px"
+              />
+            </Stack>
+          }
+          cardCustomerReviews={<CustomerReviews />}
+        />
+      </SectionContainer>
+    </Stack>
+  );
+};
+
+export default HeroHome;

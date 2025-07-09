@@ -1,13 +1,13 @@
-import HeroSectionHome from "../../sections/HeroSectionHome/HeroSectionHome";
-import SectionContainer from "../../layout/SectionContainer/SectionContainer";
-import SectionCompaniesHome from "../../sections/HeroSectionHome/SectionCompaniesHome";
+import HeroHome from "../../sections/HeroHome/HeroHome";
+import CompaniesHome from "../../sections/CompaniesHome/CompaniesHome";
 
 const Home = () => {
-  return (<>
-  <HeroSectionHome />
-  <SectionCompaniesHome/>
-  </>
-);
+  return (
+    <>
+      <HeroHome />
+      <CompaniesHome />
+    </>
+  );
 };
 
 export default Home;
