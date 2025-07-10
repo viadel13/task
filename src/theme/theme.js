@@ -13,6 +13,17 @@ export const theme = createTheme({
     },
   },
 
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      mdx: 988, // ✅ ton breakpoint personnalisé
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+
   typography: {
     fontFamily: '"Roboto", sans-serif',
     h1: {
@@ -43,7 +54,7 @@ export const theme = createTheme({
     primary: {
       main: "#15156D",
       A600: "#5251C4",
-      100: "#7D67FD05",
+      100: "#FCFCFF",
       A100: "rgba(75,115,62,0.1)",
       A200: "#4B733E7D",
       A400: "#F5FFF2",

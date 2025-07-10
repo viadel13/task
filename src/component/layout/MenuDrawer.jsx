@@ -9,6 +9,7 @@ import {
   Stack,
 } from "@mui/material";
 import List from "@mui/material/List";
+import { Link } from "react-router-dom";
 
 const MenuDrawer = ({ isOpen, toggleDrawer }) => {
   const DrawerList = (
@@ -22,7 +23,16 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
       </Stack>
       <List>
         {Links.map((link, index) => (
-          <ListItem key={index} disablePadding>
+          <ListItem
+            key={index}
+            disablePadding
+            component={Link}
+            to={link.link}
+            onClick={toggleDrawer(false)}
+            sx={{
+              color: "#000000",
+            }}
+          >
             <ListItemButton>
               <ListItemText primary={link.name} />
             </ListItemButton>
@@ -37,8 +47,8 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
             borderRadius: "8px",
             padding: "12px 20px",
             textTransform: "capitalize",
-            borderColor: "#7D67FD",
-            color: "#7D67FD",
+            color: "text.secondary",
+            borderColor: "primary.A600",
           }}
         >
           Get started

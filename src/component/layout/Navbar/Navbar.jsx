@@ -11,6 +11,7 @@ import { Links } from "../../../constant/links";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuDrawer from "../MenuDrawer";
 import SectionContainer from "../SectionContainer/SectionContainer";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar
-        position="static"
+        position="sticky"
         elevation={0}
         px={0}
         sx={{
@@ -30,6 +31,7 @@ const Navbar = () => {
           borderBottom: "1px solid rgba(0, 0, 0, 0.22)",
           paddingY: { xs: 0, sm: 0, md: "12px" },
           boxShadow: "0px 0px 8.2px rgba(0, 0, 0, 0.12)",
+          zIndex: 999,
         }}
       >
         <SectionContainer>
@@ -58,6 +60,8 @@ const Navbar = () => {
               {Links.map((link, index) => (
                 <Button
                   key={index}
+                  component={Link}
+                  to={link.link}
                   sx={{
                     color: "#000000",
                     fontWeight: "regular",

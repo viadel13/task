@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography, useTheme } from "@mui/material";
 import HeroSection from "../../common/HeroSection/HeroSection";
 import imgHeroHome from "../../../assets/images/imgHeroHome.png";
 import SectionContainer from "../../layout/SectionContainer/SectionContainer";
@@ -6,6 +6,8 @@ import SmartImage from "../../common/SmartImage/SmartImage";
 import CustomerReviews from "../../Cards/CustomerReviews/CustomerReviews";
 
 const HeroHome = () => {
+  const theme = useTheme();
+
   return (
     <Stack
       sx={{
@@ -22,6 +24,9 @@ const HeroHome = () => {
               sx={{
                 textAlign: { xs: "center", sm: "center", md: "start" },
                 fontSize: { xs: 40, sm: 48 },
+                [theme.breakpoints.between("md", "mdx")]: {
+                  textAlign: "center",
+                },
               }}
             >
               Organise your day today life with ease
@@ -35,6 +40,9 @@ const HeroHome = () => {
               sx={{
                 color: "text.A100",
                 textAlign: { xs: "center", sm: "center", md: "start" },
+                [theme.breakpoints.between("md", "mdx")]: {
+                  textAlign: "center",
+                },
               }}
             >
               Discover TaskDev , your intelligent personal assistant designed to
@@ -49,6 +57,11 @@ const HeroHome = () => {
               spacing={2}
               sx={{
                 justifyContent: { xs: "center", sm: "center", md: "start" },
+                [theme.breakpoints.between("md", "mdx")]: {
+                  justifyContent: "center",
+
+                  width: "100%",
+                },
               }}
             >
               <Button
@@ -86,6 +99,12 @@ const HeroHome = () => {
           stylesStackRight={{
             position: "relative",
             display: { xs: "none", sm: "none", md: "flex" },
+            // "@media (min-width:900px) and (max-width:987px)": {
+            //   display: "none",
+            // },
+            [theme.breakpoints.between("md", "mdx")]: {
+              display: "none",
+            },
             height: "480px",
             alignItems: "center",
           }}
@@ -97,6 +116,7 @@ const HeroHome = () => {
                 width={550}
                 height={"auto"}
                 sizes="(max-width: 600px) 400px, 800px"
+                className="smart-image-shrink"
               />
             </Stack>
           }
