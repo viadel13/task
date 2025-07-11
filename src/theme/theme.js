@@ -38,6 +38,9 @@ export const theme = createTheme({
     body1: {
       fontFamily: '"Roboto", sans-serif',
     },
+    span: {
+      fontFamily: '"Roboto", sans-serif',
+    },
   },
 
   palette: {
@@ -45,6 +48,7 @@ export const theme = createTheme({
     background: {
       default: "#FFFFFF",
       paper: "#7D67FD03",
+      A100: "#7D67FD08",
     },
     text: {
       primary: "#000000",

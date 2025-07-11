@@ -4,6 +4,7 @@ import imgHeroHome from "../../../assets/images/imgHeroHome.png";
 import SectionContainer from "../../layout/SectionContainer/SectionContainer";
 import SmartImage from "../../common/SmartImage/SmartImage";
 import CustomerReviews from "../../Cards/CustomerReviews/CustomerReviews";
+import ButtonUi from "../../ui/ButtonUi/ButtonUi";
 
 const HeroHome = () => {
   const theme = useTheme();
@@ -64,25 +65,23 @@ const HeroHome = () => {
                 },
               }}
             >
-              <Button
+              <ButtonUi
                 variant={"contained"}
-                disableElevation
-                sx={{
-                  backgroundColor: "primary.A600",
+                title={"Download now"}
+                styles={{
+                  padding: "10px 15px",
                 }}
-              >
-                Download now
-              </Button>
-              <Button
-                disableElevation
+              />
+
+              <ButtonUi
                 variant={"outlined"}
-                sx={{
+                title={"Watch Video"}
+                styles={{
+                  padding: "10px 15px",
                   color: "text.secondary",
                   borderColor: "primary.A600",
                 }}
-              >
-                Watch Video
-              </Button>
+              />
             </Stack>
           }
           stylesStackLeft={{

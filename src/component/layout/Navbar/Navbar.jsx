@@ -12,6 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuDrawer from "../MenuDrawer";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import { Link } from "react-router-dom";
+import ButtonUi from "../../ui/ButtonUi/ButtonUi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,17 +74,15 @@ const Navbar = () => {
                 </Button>
               ))}
             </Stack>
-            <Button
-              variant="contained"
-              disableElevation
-              sx={{
-                padding: "12px 20px",
-                textTransform: "capitalize",
+
+            <ButtonUi
+              variant={"contained"}
+              title={" Get started"}
+              styles={{
+                padding: "12px 30px",
                 display: { xs: "none", sm: "none", md: "flex" },
               }}
-            >
-              Get started
-            </Button>
+            />
             <IconButton
               size="large"
               edge="start"

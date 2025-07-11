@@ -4,7 +4,7 @@ import Companies from "../../common/Companies/Companies";
 
 const CompaniesHome = () => {
   return (
-    <Stack py={"8"} height={200} justifyContent={"center"}>
+    <Stack height={240} justifyContent={"center"} zIndex={999}>
       <SectionContainer>
         <Stack spacing={6}>
           <Typography
