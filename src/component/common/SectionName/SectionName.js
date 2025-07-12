@@ -7,11 +7,12 @@ const SectionName = ({ name }) => {
       <Stack direction="row" alignItems="center">
         <Stack
           bgcolor="#7D67FD1F"
-          width={200}
+        
           sx={{
             border: "1px solid #7D67FD1F",
             position: "relative",
             left: 2,
+            width:{xs: 90, sm: 100, md: 200}
           }}
         />
         <CircleIcon
@@ -36,7 +37,7 @@ const SectionName = ({ name }) => {
           textAlign={"center"}
           variant={"h5"}
           fontWeight={"bold"}
-          fontSize={17}
+          fontSize={12}
         >
           {name}
         </Typography>
@@ -44,11 +45,11 @@ const SectionName = ({ name }) => {
       <Stack direction="row-reverse" alignItems="center">
         <Stack
           bgcolor="#7D67FD1F"
-          width={200}
           sx={{
             border: "1px solid #7D67FD1F",
             position: "relative",
             left: -2,
+            width: { xs: 90, sm: 100, md: 200 }
           }}
         />
         <CircleIcon

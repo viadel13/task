@@ -41,6 +41,9 @@ export const theme = createTheme({
     span: {
       fontFamily: '"Roboto", sans-serif',
     },
+    p:{
+      fontFamily: '"Nunito", sans-serif',
+    }
   },
 
   palette: {
@@ -49,6 +52,8 @@ export const theme = createTheme({
       default: "#FFFFFF",
       paper: "#7D67FD03",
       A100: "#7D67FD08",
+      A200: "#7D67FD0D",
+
     },
     text: {
       primary: "#000000",
