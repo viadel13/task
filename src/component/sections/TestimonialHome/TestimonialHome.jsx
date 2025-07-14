@@ -5,7 +5,7 @@ import CardUi from "../../ui/CardUi/CardUi";
 
 const TestimonialHome = () => {
     return (
-        <Stack bgcolor={"background.A200"} pb={10}>
+        <Stack bgcolor={"background.A200"} pb={20}>
             <SectionContainer>
                 <Stack alignItems={"center"} marginTop={12} spacing={2} mb={8}>
                     <SectionName name={"Testimonials"} />

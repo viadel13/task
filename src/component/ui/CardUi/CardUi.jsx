@@ -1,11 +1,9 @@
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
 import { Icon } from '@iconify/react';
 import Grid from '@mui/material/Grid';
 
-import { Avatar, Button, Stack, Typography } from "@mui/material";
+import { Avatar, Stack, Typography } from "@mui/material";
 const CardUi = () => {
   return (
     <Grid container spacing={2} >
