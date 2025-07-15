@@ -5,6 +5,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Navbar from "./component/layout/Navbar/Navbar";
 import { theme } from "./theme/theme";
 import LoadPage from "./component/layout/LoadPage/LoadPage";
+import Footer from "./component/layout/Footer/Footer";
 
 function App() {
   const navigation = useNavigation();
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       {isLoading && <LoadPage load={isLoading} />}
       <Outlet />
+      <Footer />
     </ThemeProvider>
   );
 }
