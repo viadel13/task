@@ -1,6 +1,7 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { Icon } from "@iconify/react";
+import { Links } from "../../../constant/links";
 
 const Footer = () => {
   return (
@@ -8,11 +9,14 @@ const Footer = () => {
       sx={{
         backgroundColor: "text.secondary",
         height: "400px",
+        paddingTop:"37px",
+        position:"relative"
+
       }}
     >
       <Grid container spacing={2}>
         <Grid size={{ xs: 12, sm: 6, md: 6 }}>
-          <Stack justifyContent={"center"}>
+          <Stack justifyContent={"center"}  display={"flex"} flexDirection={"column"}>
             <img
               src={"./logo/LogoFooter.png"}
               alt={"logoFooter"}
@@ -58,12 +62,48 @@ const Footer = () => {
                   color: "white",
                 }}
               />
+              <Stack spacing={1}>
+                <Button variant="outlined" 
+                        sx={{ color: "background.default",
+                         borderColor: "background.default", 
+                         fontWeight: "semi-bold",
+                         }}>
+                  <Icon icon="arcticons:back-market"
+                    width="20"
+                    height="32"
+                    style={{
+                      color: "background.default",
+                      rotate: "90deg",
+
+                    }} />
+                  BACK TO TOP </Button>
+              </Stack>
             </Stack>
           </Stack>
         </Grid>
 
-        <Grid size={{ xs: 12, sm: 6, md: 6 }}></Grid>
-      </Grid>
+        <Grid size={{ xs: 12, sm: 6, md: 6 }}>
+          <Stack sx={{ color: "background.default" }} >
+            <Typography variant="body1" fontWeight={"bold"}>
+              Site Map
+
+            </Typography >
+            {Links.map((Links, index) => (
+
+              <Typography key={index} variant="body1">
+                {Links.name}
+
+              </Typography>
+
+            ))}
+
+
+          </Stack>
+        </Grid>
+        
+        </Grid>
+      <Typography variant="body1" fontWeight={"semi-bold"} sx={{color:"background.default", position:"absolute", bottom:0}}textAlign={"center"} >© TaskDev 2025.Tous droits réservés</Typography>
+
     </Box>
   );
 };
