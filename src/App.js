@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, useNavigation } from "react-router-dom";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
 
 import Navbar from "./component/layout/Navbar/Navbar";
 import { theme } from "./theme/theme";
@@ -12,13 +12,25 @@ function App() {
   const isLoading = navigation.state === "loading";
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Navbar />
-      {isLoading && <LoadPage load={isLoading} />}
-      <Outlet />
-      <Footer />
-    </ThemeProvider>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar />
+        {isLoading && <LoadPage load={isLoading} />}
+
+        <main className="content">
+          <Outlet />
+        </main>
+
+        <Footer />
+      </ThemeProvider>
+    </Box>
   );
 }
 

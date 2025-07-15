@@ -1,23 +1,35 @@
-import { Button, Stack, Typography, useTheme } from "@mui/material";
-import HeroSection from "../../common/HeroSection/HeroSection";
-import imgHeroHome from "../../../assets/images/imgHeroHome.png";
+import { Stack, Typography, useTheme } from "@mui/material";
 import SectionContainer from "../../layout/SectionContainer/SectionContainer";
-import SmartImage from "../../common/SmartImage/SmartImage";
-import CustomerReviews from "../../Cards/CustomerReviews/CustomerReviews";
+import HeroSection from "../../common/HeroSection/HeroSection";
 import ButtonUi from "../../ui/ButtonUi/ButtonUi";
+import SmartImage from "../../common/SmartImage/SmartImage";
+import imgHeroFeatures from "../../../assets/images/imgHeroFeatures.png";
+import CustomerReviews from "../../Cards/CustomerReviews/CustomerReviews";
+import ChipUi from "../../ui/ChipUi/ChipUi";
 
-const HeroHome = () => {
+const HeroFeatures = () => {
   const theme = useTheme();
 
   return (
     <Stack
       sx={{
         paddingY: { xs: 4, sm: 4, md: 8 },
-          backgroundColor: "background.paper",
+        backgroundColor: "#7D67FD0D",
       }}
     >
       <SectionContainer>
         <HeroSection
+          nameSection={
+            <ChipUi
+              label={"FEATURES"}
+              styles={{
+                borderRadius: "8px",
+                color: "#907DFD",
+                fontWeight: "semibold",
+                backgroundColor: "#7D67FD1F",
+              }}
+            />
+          }
           title={
             <Typography
               variant={"h3"}
@@ -31,7 +43,7 @@ const HeroHome = () => {
                 },
               }}
             >
-              Organise your day today life with ease
+              Everything you need to get organised
             </Typography>
           }
           desc={
@@ -47,10 +59,8 @@ const HeroHome = () => {
                 },
               }}
             >
-              Discover TaskDev , your intelligent personal assistant designed to
-              simplify task management. Whether you're juggling work, study or
-              everyday tasks, TaskDev helps you stay organised, focused and in
-              control, all on one intuitive platform
+              Find out more about TaskDevs features, designed to make your
+              day-to-day life easier
             </Typography>
           }
           button={
@@ -68,19 +78,9 @@ const HeroHome = () => {
             >
               <ButtonUi
                 variant={"contained"}
-                title={"Download now"}
+                title={"Start now"}
                 styles={{
                   padding: "10px 15px",
-                }}
-              />
-
-              <ButtonUi
-                variant={"outlined"}
-                title={"Watch Video"}
-                styles={{
-                  padding: "10px 15px",
-                  color: "text.secondary",
-                  borderColor: "primary.A600",
                 }}
               />
             </Stack>
@@ -88,7 +88,7 @@ const HeroHome = () => {
           stylesStackLeft={{
             display: "flex",
             flexDirection: "column",
-            alignItems: { xs: "centre", sm: "center", md: "flex-start" },
+            alignItems: { xs: "center", sm: "center", md: "flex-start" },
             gap: 2,
           }}
           stylesHeroSection={{
@@ -111,8 +111,8 @@ const HeroHome = () => {
           img={
             <Stack>
               <SmartImage
-                src={imgHeroHome}
-                alt="Photo d'exemple"
+                src={imgHeroFeatures}
+                alt="imgHeroFeatures"
                 width={550}
                 height={"auto"}
                 sizes="(max-width: 600px) 400px, 800px"
@@ -120,11 +120,9 @@ const HeroHome = () => {
               />
             </Stack>
           }
-          cardCustomerReviews={<CustomerReviews />}
         />
       </SectionContainer>
     </Stack>
   );
 };
-
-export default HeroHome;
+export default HeroFeatures;
