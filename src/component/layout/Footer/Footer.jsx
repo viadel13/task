@@ -149,24 +149,8 @@ const Footer = () => {
             </Stack>
           </Grid>
         </Grid>
-      </SectionContainer>
-      <Typography
-        variant="body1"
-        component="div"
-        fontWeight={"semi-bold"}
-        sx={{
-          color: "background.default",
-          backgroundColor: "primary.main",
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          fontSize: "15px",
-        }}
-        textAlign={"center"}
-      >
-        © TaskDev 2025.Tous droits réservés
-      </Typography>
+      <Typography variant="body1" fontWeight={"semi-bold"} sx={{color:"background.default", position:"absolute", bottom:0}}textAlign={"center"} >© TaskDev 2025.Tous droits réservés</Typography>
+
     </Box>
   );
 };
