@@ -13,9 +13,11 @@ import MenuDrawer from "../MenuDrawer";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import { Link } from "react-router-dom";
 import ButtonUi from "../../ui/ButtonUi/ButtonUi";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setIsOpen(newOpen);
@@ -47,6 +49,10 @@ const Navbar = () => {
               alt="taskdev"
               width="140"
               height="38"
+              onClick={() => navigate("/")}
+              style={{
+                cursor: "pointer",
+              }}
             />
 
             <Stack

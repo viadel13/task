@@ -93,3 +93,30 @@ export const ClientsTestimonials = [
     bio: "ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
 ];
+
+export const Features = [
+  {
+    id: 1,
+    name: "Add and manage your tasks in one click",
+    img: "./logo/dev.jpeg",
+    desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
+  },
+  {
+    id: 2,
+    name: "Receive personalised reminders",
+    img: "./logo/dev.jpeg",
+    desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
+  },
+  {
+    id: 3,
+    name: "Planning your days and weeks",
+    img: "./logo/dev.jpeg",
+    desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
+  },
+  {
+    id: 4,
+    name: "Track progress and stay motivated",
+    img: "./logo/dev.jpeg",
+    desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
+  },
+];

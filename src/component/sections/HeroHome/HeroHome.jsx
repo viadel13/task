@@ -13,6 +13,7 @@ const HeroHome = () => {
     <Stack
       sx={{
         paddingY: { xs: 4, sm: 4, md: 8 },
+          backgroundColor: "background.paper",
       }}
     >
       <SectionContainer>
