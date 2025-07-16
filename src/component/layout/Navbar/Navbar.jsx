@@ -14,10 +14,12 @@ import SectionContainer from "../SectionContainer/SectionContainer";
 import { Link } from "react-router-dom";
 import ButtonUi from "../../ui/ButtonUi/ButtonUi";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleDrawer = (newOpen) => () => {
     setIsOpen(newOpen);
@@ -64,21 +66,39 @@ const Navbar = () => {
                 alignItems: "center",
               }}
             >
-              {Links.map((link, index) => (
-                <Button
-                  key={index}
-                  component={Link}
-                  to={link.link}
-                  sx={{
-                    color: "#000000",
-                    fontWeight: "regular",
-                    textTransform: "capitalize",
-                    fontSize: 16,
-                  }}
-                >
-                  <Typography>{link.name}</Typography>
-                </Button>
-              ))}
+              {Links.map((link, index) => {
+                const isActive = location.pathname === link.link;
+
+                return (
+                  <Button
+                    key={index}
+                    component={Link}
+                    to={link.link}
+                    sx={{
+                      color: "#000000",
+                      fontWeight: "regular",
+                      textTransform: "capitalize",
+                      fontSize: 16,
+                      position: "relative",
+                      "&::before": isActive
+                        ? {
+                            content: '""',
+                            position: "absolute",
+                            top: -6, // Positionne le point juste au-dessus du lien
+                            left: "50%", // Centre le point
+                            transform: "translateX(-50%)", // Centre parfaitement
+                            width: "8px", // Largeur du point
+                            height: "8px", // Hauteur du point
+                            borderRadius: "50%", // Pour le rendre circulaire
+                            backgroundColor: "#1976d2", // Couleur du point (tu peux ajuster)
+                          }
+                        : {},
+                    }}
+                  >
+                    <Typography>{link.name}</Typography>
+                  </Button>
+                );
+              })}
             </Stack>
 
             <ButtonUi

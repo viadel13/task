@@ -1,8 +1,11 @@
+import { Icon } from "@iconify/react";
+
+
 export const Links = [
   { name: "Home", link: "/" },
-  { name: "Features", link: "features" },
-  { name: "About", link: "about" },
-  { name: "Contact", link: "contact" },
+  { name: "Features", link: "/features" },
+  { name: "About", link: "/about" },
+  { name: "Contact", link: "/contact" },
 ];
 
 export const LogosCompanies = [
@@ -98,25 +101,52 @@ export const Features = [
   {
     id: 1,
     name: "Add and manage your tasks in one click",
-    img: "./logo/dev.jpeg",
+    img: "./logo/7140417_3497643.jpg",
     desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
   },
   {
     id: 2,
     name: "Receive personalised reminders",
-    img: "./logo/dev.jpeg",
+    img: "./logo/8451586_3914790.jpg",
     desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
   },
   {
     id: 3,
     name: "Planning your days and weeks",
-    img: "./logo/dev.jpeg",
+    img: "./logo/8690687_3952464.jpg",
     desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
   },
   {
     id: 4,
     name: "Track progress and stay motivated",
-    img: "./logo/dev.jpeg",
+    img: "./logo/12704411_5006461 1.png",
     desc: "stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to mak",
   },
 ];
+
+export const BetterCard = [
+  {
+    id: 1,
+    name: "Easy to use",
+    img: <Icon icon="hugeicons:brain-02" width="24" height="24" />,
+    desc: "Everything is designed for instant learning, with no need for complicated training",
+  },
+  {
+    id: 2,
+    name: "Ultra rapid",
+    img: <Icon icon="fluent:flash-20-regular" width="24" height="24" />,
+    desc: "Optimised performance to keep you productive at all times",
+  },
+  {
+    id: 3,
+    name: "Accessible everywhere",
+    img: <Icon icon="proicons:phone" width="24" height="24" />,
+    desc: "TaskDev works just as well on mobiles as it does on computers.",
+  },
+  {
+    id: 4,
+    name: "Fluid collaboration",
+    img: "",
+    desc: "Work as part of a team, share tasks and monitor progress.",
+  }
+]

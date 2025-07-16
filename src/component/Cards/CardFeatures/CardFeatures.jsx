@@ -45,7 +45,7 @@ const CardFeatures = () => {
                 <CardMedia
                   component="img"
                   height="auto"
-                  image="./logo/dev.jpeg"
+                  image={feature.img}
                   alt="green iguana"
                 />
               </CardActionArea>
