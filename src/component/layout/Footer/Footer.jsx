@@ -17,7 +17,7 @@ const Footer = () => {
     <Box
       sx={{
         backgroundColor: "text.secondary",
-        // height: "430px",
+        height: "auto",
         position: "relative",
         p: "37px 0",
       }}
