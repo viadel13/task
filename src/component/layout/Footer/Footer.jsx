@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react";
 import { Links } from "../../../constant/links";
 import ButtonUi from "../../ui/ButtonUi/ButtonUi";
 import SectionContainer from "../SectionContainer/SectionContainer";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   function ScrollToTopButton() {
@@ -139,18 +138,35 @@ const Footer = () => {
 
               <Stack sx={{ color: "background.default" }} spacing={2}>
                 <Typography variant="body1" fontWeight={"bold"} mb={4}>
-                  Legal
+                  Site Map
                 </Typography>
-
-                <Typography variant="body1">Privacy policy</Typography>
-
-                <Typography variant="body1">Terms of service</Typography>
+                {Links.map((Links, index) => (
+                  <Typography key={index} variant="body1">
+                    {Links.name}
+                  </Typography>
+                ))}
               </Stack>
             </Stack>
           </Grid>
         </Grid>
-      <Typography variant="body1" fontWeight={"semi-bold"} sx={{color:"background.default", position:"absolute", bottom:0}}textAlign={"center"} >© TaskDev 2025.Tous droits réservés</Typography>
-
+      </SectionContainer>
+      <Typography
+        variant="body1"
+        component="div"
+        fontWeight={"semi-bold"}
+        sx={{
+          color: "background.default",
+          backgroundColor: "primary.main",
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          fontSize: "15px",
+        }}
+        textAlign={"center"}
+      >
+        © TaskDev 2025.Tous droits réservés
+      </Typography>
     </Box>
   );
 };
