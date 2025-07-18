@@ -94,6 +94,7 @@ const FaqHome = () => {
           spacing={2}
         >
           <SectionName name={"FAQ"} />
+
           <Typography
             variant="h3"
             sx={{
@@ -108,6 +109,7 @@ const FaqHome = () => {
             variant="body1"
             sx={{
               textAlign: "center",
+
             }}
           >
             Do you have any questions? We've got the answers. Whether you're a

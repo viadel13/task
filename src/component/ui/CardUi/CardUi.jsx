@@ -13,7 +13,7 @@ const CardUi = () => {
           <Card
             elevation={0}
             sx={{
-              maxWidth: 400,
+              maxWidth: { xs: "100%", sm: 400 },
               backgroundColor: "white",
               borderRadius: "25px",
               mb: 4,

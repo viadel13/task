@@ -23,7 +23,7 @@ const BannerAd = () => {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            height: "359px",
+            height: "auto",
             color: "white",
             "&::before": {
               content: '""',
@@ -36,11 +36,22 @@ const BannerAd = () => {
             },
           }}
         >
-          <Stack gap={1} zIndex={1} marginLeft={10} alignItems={"start"}>
-            <Typography variant="body1" fontWeight={"bold"} fontSize={40}>
+          <Stack zIndex={1} sx={{
+            // padding: "0 20px",
+            p: 10,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: { xs: "center", sm: "center", md: "start" }
+          }}>
+
+            <Typography variant="body1" fontWeight={"bold"} sx={{
+              fontSize: { xs: 20, sm: 30, md: 40 }
+            }}>
               Task Dev is waiting for you
             </Typography>
-            <Typography variant="p" mb={1}>
+            <Typography variant="p" mb={1} sx={{
+              fontSize: { xs: 16, sm: 16, md: 20 }
+            }}>
               Manage your tasks efficiently and with peace of mind with TaskDev.
               Join over 10,000 users who have already been won over
             </Typography>
@@ -57,18 +68,20 @@ const BannerAd = () => {
           </Stack>
           <Box
             sx={{
-              width: 587,
-              height: 587,
+              width: { xs: 300, sm: 187, md: 587 },
+              height: { xs: 300, sm: 187, md: 587 },
               borderRadius: "50%",
               backgroundColor: "rgba(255, 238, 221, 0.34)",
               position: "absolute",
               right: 0,
+              zIndex: 1
+              // clipPath: "inset(0% 10% 0% 0%)"
             }}
           >
             <Box
               sx={{
-                width: 587,
-                height: 587,
+                width: { xs: 300, sm: 187, md: 587 },
+                height: { xs: 300, sm: 187, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.15)",
                 position: "absolute",
@@ -78,8 +91,8 @@ const BannerAd = () => {
 
             <Box
               sx={{
-                width: 587,
-                height: 587,
+                width: { xs: 300, sm: 187, md: 587 },
+                height: { xs: 300, sm: 187, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.25)",
                 position: "absolute",
@@ -89,8 +102,8 @@ const BannerAd = () => {
 
             <Box
               sx={{
-                width: 587,
-                height: 587,
+                width: { xs: 300, sm: 187, md: 587 },
+                height: { xs: 300, sm: 187, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.15)",
                 position: "absolute",
@@ -100,8 +113,8 @@ const BannerAd = () => {
 
             <Box
               sx={{
-                width: 587,
-                height: 587,
+                width: { xs: 300, sm: 187, md: 587 },
+                height: { xs: 300, sm: 187, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.17)",
                 position: "absolute",
@@ -110,8 +123,8 @@ const BannerAd = () => {
             />
             <Box
               sx={{
-                width: 587,
-                height: 587,
+                width: { xs: 300, sm: 187, md: 587 },
+                height: { xs: 300, sm: 187, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.18)",
                 position: "absolute",

@@ -8,13 +8,11 @@ const BetterHome = () => {
         <Stack bgcolor={"background.A100"} pb={3}>
 
             <SectionContainer>
-                <Stack alignItems={"center"} paddingTop={12} spacing={2}>
+                <Stack alignItems={"center"} paddingTop={12} spacing={2} width={"100%"} justifyContent={"center"}>
                     <SectionName name={"Better"} />
-
-                    <Typography variant="background.paper" fontWeight={"Bold"} fontSize={36}>
+                    <Typography variant="background.paper" fontWeight={"Bold"}>
                         Why it's better
                     </Typography>
-
 
                     <Typography>
                         Discover what makes Task Dev smarter than other management tools

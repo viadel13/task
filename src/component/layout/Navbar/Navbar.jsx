@@ -75,23 +75,23 @@ const Navbar = () => {
                     component={Link}
                     to={link.link}
                     sx={{
-                      color: "#000000",
+                      color: !isActive ? "#000000" : "#1976d2",
                       fontWeight: "regular",
                       textTransform: "capitalize",
                       fontSize: 16,
                       position: "relative",
                       "&::before": isActive
                         ? {
-                            content: '""',
-                            position: "absolute",
-                            top: -6, // Positionne le point juste au-dessus du lien
-                            left: "50%", // Centre le point
-                            transform: "translateX(-50%)", // Centre parfaitement
-                            width: "8px", // Largeur du point
-                            height: "8px", // Hauteur du point
-                            borderRadius: "50%", // Pour le rendre circulaire
-                            backgroundColor: "#1976d2", // Couleur du point (tu peux ajuster)
-                          }
+                          content: '""',
+                          position: "absolute",
+                          top: -6,
+                          left: "50%",
+                          transform: "translateX(-50%)",
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          backgroundColor: "#1976d2",
+                        }
                         : {},
                     }}
                   >
