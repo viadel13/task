@@ -23,7 +23,7 @@ const BannerAd = () => {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            height: "auto",
+            height: "400px",
             color: "white",
             "&::before": {
               content: '""',
@@ -34,11 +34,11 @@ const BannerAd = () => {
               bottom: 0,
               background: "rgba(0, 0, 0, 0.5)",
             },
+            
           }}
         >
-          <Stack zIndex={1} sx={{
-            // padding: "0 20px",
-            p: 10,
+          <Stack zIndex={2} sx={{
+            padding:{xs: 0, sm: 0, md: "0 30px"},
             display: "flex",
             flexDirection: "column",
             alignItems: { xs: "center", sm: "center", md: "start" }
@@ -50,7 +50,8 @@ const BannerAd = () => {
               Task Dev is waiting for you
             </Typography>
             <Typography variant="p" mb={1} sx={{
-              fontSize: { xs: 16, sm: 16, md: 20 }
+              fontSize: { xs: 15, sm: 16, md: 20 },
+              textAlign: {xs: "center", sm: "center", md: "start"}
             }}>
               Manage your tasks efficiently and with peace of mind with TaskDev.
               Join over 10,000 users who have already been won over
@@ -70,18 +71,22 @@ const BannerAd = () => {
             sx={{
               width: { xs: 300, sm: 187, md: 587 },
               height: { xs: 300, sm: 187, md: 587 },
-              borderRadius: "50%",
-              backgroundColor: "rgba(255, 238, 221, 0.34)",
+              backgroundColor: {xs: 0, sm: 0, md:"rgba(255, 238, 221, 0.34)"},
               position: "absolute",
               right: 0,
-              zIndex: 1
+              zIndex: 1,
+              borderTopLeftRadius: "50%",
+              borderBottomLeftRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems:"center"
               // clipPath: "inset(0% 10% 0% 0%)"
             }}
           >
             <Box
               sx={{
-                width: { xs: 300, sm: 187, md: 587 },
-                height: { xs: 300, sm: 187, md: 587 },
+                width: { xs: 300, sm: 300, md: 587 },
+                height: { xs: 300, sm: 300, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.15)",
                 position: "absolute",
@@ -91,8 +96,8 @@ const BannerAd = () => {
 
             <Box
               sx={{
-                width: { xs: 300, sm: 187, md: 587 },
-                height: { xs: 300, sm: 187, md: 587 },
+                width: { xs: 300, sm: 300, md: 587 },
+                height: { xs: 300, sm: 300, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.25)",
                 position: "absolute",
@@ -102,8 +107,8 @@ const BannerAd = () => {
 
             <Box
               sx={{
-                width: { xs: 300, sm: 187, md: 587 },
-                height: { xs: 300, sm: 187, md: 587 },
+                width: { xs: 300, sm: 300, md: 587 },
+                height: { xs: 300, sm: 300, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.15)",
                 position: "absolute",
@@ -113,8 +118,8 @@ const BannerAd = () => {
 
             <Box
               sx={{
-                width: { xs: 300, sm: 187, md: 587 },
-                height: { xs: 300, sm: 187, md: 587 },
+                width: { xs: 300, sm: 300, md: 587 },
+                height: { xs: 300, sm: 300, md: 587 },
                 borderRadius: "50%",
                 backgroundColor: "rgba(23, 44, 102, 0.17)",
                 position: "absolute",

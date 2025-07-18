@@ -12,7 +12,7 @@ const FeaturesSection = () => {
         width: "100%",
         position: "relative",
         overflow: "hidden",
-        pb: 12,
+       
       }}
     >
       <Stack

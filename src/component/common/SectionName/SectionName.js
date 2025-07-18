@@ -11,7 +11,7 @@ const SectionName = ({ name }) => {
             border: "1px solid #7D67FD1F",
             position: "relative",
             left: 2,
-            width: { xs: 90, sm: 100, md: 200 },
+            width: { xs: 50, sm: 100, md: 200 },
           }}
         />
         <CircleIcon
@@ -49,7 +49,7 @@ const SectionName = ({ name }) => {
             border: "1px solid #7D67FD1F",
             position: "relative",
             left: -2,
-            width: { xs: 90, sm: 100, md: 200 },
+            width: { xs: 50, sm: 100, md: 200 },
           }}
         />
         <CircleIcon
