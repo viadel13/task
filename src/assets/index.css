@@ -1,5 +1,47 @@
-body{
-    background: #FFFFFF;
-    margin: 0px;
-    padding: 0px;
+/* styles.css ou styled-component */
+/*@media (max-width: 1071px) {*/
+
+/*    .smart-image-shrink {*/
+/*        max-width: 350px !important;*/
+/*    }*/
+/*}*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+//border-radius: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #706FE5;
+//border-radius: 0.5rem;
+    cursor: pointer;
+    border: 0.2rem solid #706FE5;
+    border-radius: 10px;
+}
+
+img {
+    user-select: none;
+}
+
+
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
 }

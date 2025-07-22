@@ -1,15 +1,36 @@
-import { CssBaseline, Stack, ThemeProvider, Typography } from "@mui/material";
+import React from "react";
+import { Outlet, useNavigation } from "react-router-dom";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+
 import Navbar from "./component/layout/Navbar/Navbar";
 import { theme } from "./theme/theme";
-import Home from "./component/pages/Home/Home";
+import LoadPage from "./component/layout/LoadPage/LoadPage";
+import Footer from "./component/layout/Footer/Footer";
 
 function App() {
+  const navigation = useNavigation();
+  const isLoading = navigation.state === "loading";
+
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Navbar />
-      <Home />
-    </ThemeProvider>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar />
+        {isLoading && <LoadPage load={isLoading} />}
+
+        <main className="content">
+          <Outlet />
+        </main>
+
+        <Footer />
+      </ThemeProvider>
+    </Box>
   );
 }
 

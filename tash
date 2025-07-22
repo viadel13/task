@@ -1,0 +1,11 @@
+[33m5f8f7a6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mDev[m[33m)[m HEAD@{0}: merge origin/Dev: Fast-forward
+[33m88e21ad[m HEAD@{1}: commit: Footer
+[33m7d4a80c[m HEAD@{2}: pull --tags origin Dev: Fast-forward
+[33m77fccad[m HEAD@{3}: commit: bande
+[33mebf7061[m HEAD@{4}: commit: Testimonials
+[33m55c8cbf[m HEAD@{5}: pull --tags origin Dev: Fast-forward
+[33md264e3e[m HEAD@{6}: pull --tags origin Dev: Fast-forward
+[33m00c951c[m HEAD@{7}: commit: m
+[33mf545c51[m HEAD@{8}: commit: SectionCompanies
+[33m7aeecb7[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{9}: checkout: moving from main to Dev
+[33ma0245bd[m[33m ([m[1;32mmain[m[33m)[m HEAD@{10}: clone: from https://github.com/Angepraice-19/TaskDev.git

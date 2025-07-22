@@ -8,29 +8,25 @@ const HeroSection = ({
   img,
   stylesHeroSection,
   stylesStackRight,
+  stylesStackLeft,
+  cardCustomerReviews,
 }) => {
   return (
-    <Stack sx={stylesHeroSection}>
-      <Stack sx={stylesStackRight}>
+    <Stack sx={stylesHeroSection} direction="row" position="relative">
+      <Stack sx={stylesStackLeft} flex={1}>
         {nameSection}
-        <Typography variant={"h3"} color={"secondary.main"} fontWeight={"bold"}>
-          {" "}
-          {title}
-        </Typography>
-        <Typography
-          variant={"body1"}
-          color={"secondary.main"}
-          mt={2}
-          sx={{
-            color: "text.A100",
-          }}
-        >
-          {desc}
-        </Typography>
+
+        {title}
+
+        {desc}
 
         {button}
       </Stack>
-      <Stack>{img}</Stack>
+
+      <Stack sx={stylesStackRight}>
+        {img}
+        {cardCustomerReviews}
+      </Stack>
     </Stack>
   );
 };
