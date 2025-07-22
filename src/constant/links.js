@@ -150,3 +150,27 @@ export const BetterCard = [
     desc: "Work as part of a team, share tasks and monitor progress.",
   }
 ]
+
+export const TeamsAbout = [
+  {
+    img: "./images/1296.jpg",
+    name: "Jane Cooper",
+    role: "Chef de Projet",
+  },
+  {
+    img: "./images/12621.jpg",
+    name: "Darlene Robertson",
+    role: "Responsable Marketing",
+  },
+  {
+    img: "./images/2148817105.jpg",
+    name: "Darrell Steward",
+    role: "Developeur",
+  },
+  {
+    img: "./images/2148817117.jpg",
+    name: "Jenny Wilson",
+    role: "Architecte",
+  },
+
+]

@@ -13,6 +13,7 @@ export default function SmartImage({
   sizes,
   className,
   style,
+  styleImg
 }) {
   const [loaded, setLoaded] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -58,6 +59,7 @@ export default function SmartImage({
             objectFit: "cover",
             transition: "opacity 0.3s ease",
             opacity: loaded ? 1 : 0,
+            ...styleImg
           }}
         />
       )}
