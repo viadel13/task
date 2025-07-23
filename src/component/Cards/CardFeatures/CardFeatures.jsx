@@ -17,7 +17,8 @@ const CardFeatures = () => {
           width={"100%"}
           key={feature.id}
           sx={{
-            display: "flex",
+            
+    
             flexDirection: {
               xs: "column",
               sm: "column",

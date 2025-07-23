@@ -32,7 +32,7 @@ const Teams = () => {
                                             src={i.img}
                                             alt={i.name}
                                             width={300}
-                                            height={300}
+                                            height={"auto"}
                                             sizes="(max-width: 600px) 400px, 800px"
                                             className="smart-image-shrink"
                                             styleImg={{
