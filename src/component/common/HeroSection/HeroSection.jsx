@@ -12,9 +12,12 @@ const HeroSection = ({
   cardCustomerReviews,
 }) => {
   return (
+
     <Stack sx={stylesHeroSection} direction="row" position="relative">
-      <Stack sx={stylesStackLeft} flex={1}>
-        {nameSection}
+
+      <Stack sx={stylesStackLeft} >
+        {/* 
+        {nameSection} */}
 
         {title}
 
