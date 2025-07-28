@@ -47,7 +47,7 @@ const Navbar = () => {
             alignItems={"center"}
           >
             <img
-              src={"./logo/taskdev.png"}
+              src={"/logo/taskdev.png"}
               alt="taskdev"
               width="140"
               height="38"
@@ -82,16 +82,16 @@ const Navbar = () => {
                       position: "relative",
                       "&::before": isActive
                         ? {
-                          content: '""',
-                          position: "absolute",
-                          top: -6,
-                          left: "50%",
-                          transform: "translateX(-50%)",
-                          width: "8px",
-                          height: "8px",
-                          borderRadius: "50%",
-                          backgroundColor: "#1976d2",
-                        }
+                            content: '""',
+                            position: "absolute",
+                            top: -6,
+                            left: "50%",
+                            transform: "translateX(-50%)",
+                            width: "8px",
+                            height: "8px",
+                            borderRadius: "50%",
+                            backgroundColor: "#1976d2",
+                          }
                         : {},
                     }}
                   >
