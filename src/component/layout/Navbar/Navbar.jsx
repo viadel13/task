@@ -47,7 +47,7 @@ const Navbar = () => {
             alignItems={"center"}
           >
             <img
-              src={"./logo/taskDev.png"}
+              src={"/logo/taskDev.png"}
               alt="taskdev"
               width="140"
               height="38"
