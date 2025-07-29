@@ -2,7 +2,6 @@ import { Stack, Typography, useTheme } from "@mui/material";
 import SectionContainer from "../../layout/SectionContainer/SectionContainer";
 import HeroSection from "../../common/HeroSection/HeroSection";
 import ChipUi from "../../ui/ChipUi/ChipUi";
-import ButtonUi from "../../ui/ButtonUi/ButtonUi";
 
 
 const HeroContact = () => {
