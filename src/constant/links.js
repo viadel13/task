@@ -1,8 +1,7 @@
 import { Icon } from "@iconify/react";
 
-
 export const Links = [
-  { name: "Home", link: "/" },
+  { name: "Homef", link: "/" },
   { name: "Features", link: "/features" },
   { name: "About", link: "/about" },
   { name: "Contact", link: "/contact" },
@@ -58,19 +57,18 @@ export const Faq = [
   },
 ];
 
-
 export const ClientsTestimonials = [
   {
     name: "Delvia",
     image: "./logo/dev.jpeg",
     pseudo: "dev@78",
-    bio: "Grâce à TaskDev, j’ai enfin trouvé une manière simple et claire de suivre mes projets.L’interface est fluide, et je peux collaborer sans stress avec mon équipe."
+    bio: "Grâce à TaskDev, j’ai enfin trouvé une manière simple et claire de suivre mes projets.L’interface est fluide, et je peux collaborer sans stress avec mon équipe.",
   },
   {
     name: "Delvia",
     image: "./logo/dev.jpeg",
     pseudo: "mira.design",
-    bio: "J’utilise TaskDev pour gérer mes projets de design et mes deadlines clients.L’outil est propre, ergonomique et très fiable."
+    bio: "J’utilise TaskDev pour gérer mes projets de design et mes deadlines clients.L’outil est propre, ergonomique et très fiable.",
   },
   {
     name: "Delvia",
@@ -125,7 +123,6 @@ export const Features = [
   },
 ];
 
-
 export const BetterCard = [
   {
     id: 1,
@@ -150,8 +147,8 @@ export const BetterCard = [
     name: "Fluid collaboration",
     img: <Icon icon="ri:shake-hands-line" width="24" height="24" />,
     desc: "Work as part of a team, share tasks and monitor progress.",
-  }
-]
+  },
+];
 
 export const TeamsAbout = [
   {
@@ -174,5 +171,4 @@ export const TeamsAbout = [
     name: "Jenny Wilson",
     role: "Architecte",
   },
-
-]
+];
