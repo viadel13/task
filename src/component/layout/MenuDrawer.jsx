@@ -19,7 +19,7 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
       bgcolor={"white"}
     >
       <Stack p={2}>
-        <img src={"./logo/taskdev.png"} alt="taskdev" width="140" height="38" />
+        <img src={"/logo/taskDev.png"} alt="taskdev" width="140" height="38" />
       </Stack>
       <List>
         {Links.map((link, index) => (
