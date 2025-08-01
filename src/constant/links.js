@@ -8,12 +8,12 @@ export const Links = [
 ];
 
 export const LogosCompanies = [
-  { name: "Apple", link: "/logo/apple.png" },
-  { name: "Google", link: "/logo/google.png" },
-  { name: "Google", link: "/logo/google.png" },
-  { name: "Microsoft", link: "/logo/microsoft.png" },
-  { name: "Microsoft", link: "/logo/microsoft.png" },
-  { name: "Microsoft", link: "/logo/microsoft.png" },
+  { name: "Apple", link: "/logo/Apple.png" },
+  { name: "Google", link: "/logo/Google.png" },
+  { name: "Google", link: "/logo/Google.png" },
+  { name: "Microsoft", link: "/logo/Microsoft.png" },
+  { name: "Microsoft", link: "/logo/Microsoft.png" },
+  { name: "Microsoft", link: "/logo/Microsoft.png" },
 ];
 
 export const Clients = [
