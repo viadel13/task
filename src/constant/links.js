@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 
 export const Links = [
-  { name: "Homef", link: "/" },
+  { name: "Home", link: "/" },
   { name: "Features", link: "/features" },
   { name: "About", link: "/about" },
   { name: "Contact", link: "/contact" },
