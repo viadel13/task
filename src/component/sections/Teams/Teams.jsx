@@ -37,7 +37,6 @@ const Teams = () => {
               Content here, content here
             </Typography>
           </Stack>
-          <ButtonUi title={"EXPLORE ALL"} variant={"contained"} />
         </Stack>
 
         <Grid container spacing={4} mt={4}>
