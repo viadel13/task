@@ -8,20 +8,20 @@ export const Links = [
 ];
 
 export const LogosCompanies = [
-  { name: "Apple", link: "./logo/apple.png" },
-  { name: "Google", link: "./logo/google.png" },
-  { name: "Google", link: "./logo/google.png" },
-  { name: "Microsoft", link: "./logo/microsoft.png" },
-  { name: "Microsoft", link: "./logo/microsoft.png" },
-  { name: "Microsoft", link: "./logo/microsoft.png" },
+  { name: "Apple", link: "/logo/apple.png" },
+  { name: "Google", link: "/logo/google.png" },
+  { name: "Google", link: "/logo/google.png" },
+  { name: "Microsoft", link: "/logo/microsoft.png" },
+  { name: "Microsoft", link: "/logo/microsoft.png" },
+  { name: "Microsoft", link: "/logo/microsoft.png" },
 ];
 
 export const Clients = [
-  { name: "dev", link: "./logo/dev.jpeg" },
-  { name: "dev", link: "./logo/dev.jpeg" },
-  { name: "dev", link: "./logo/dev.jpeg" },
-  { name: "dev", link: "./logo/dev.jpeg" },
-  { name: "dev", link: "./logo/dev.jpeg" },
+  { name: "dev", link: "/logo/dev.jpeg" },
+  { name: "dev", link: "/logo/dev.jpeg" },
+  { name: "dev", link: "/logo/dev.jpeg" },
+  { name: "dev", link: "/logo/dev.jpeg" },
+  { name: "dev", link: "/logo/dev.jpeg" },
 ];
 
 export const Faq = [
