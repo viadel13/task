@@ -13,9 +13,8 @@ function App() {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
 
-
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }, [pathname]);
 
   return (

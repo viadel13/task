@@ -4,117 +4,81 @@ import {
   CardMedia,
   Stack,
   Typography,
+  Card,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
-import Card from "@mui/material/Card";
-import Banner from "../../../assets/images/Banner.jpg";
 import { Features } from "../../../constant/links";
 
 const CardFeatures = () => {
+  const theme = useTheme();
+  const isMd = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Box>
       {Features.map((feature) => (
         <Stack
-          width={"100%"}
           key={feature.id}
+          direction={{
+            xs: "column",
+            md: feature.id % 2 === 0 ? "row-reverse" : "row",
+          }}
+          spacing={4}
+          alignItems="center"
+          justifyContent="center"
           sx={{
-
-
-            flexDirection: {
-              xs: "column",
-              sm: "column",
-              md: feature.id % 2 === 0 ? "row-reverse" : "row",
-            },
-            justifyContent: "space-between",
-            alignItems: { xs: "start", sm: "start", md: "center" },
-            mb: 5,
+            mb: { xs: 6, md: 10 },
+            px: { xs: 2, md: 6 },
           }}
         >
-          <Stack
+          {/* Image */}
+          <Card
             sx={{
-              display: "flex",
-              flexDirection: { xs: "column", sm: "column", md: "row" },
+              width: isMd ? 180 : "100%",
+              height: "auto",
+              boxShadow: "0px 8px 24px 0px #DBDBDB85",
+              borderRadius: 3,
             }}
           >
-            <Card
-              sx={{
-                width: 120,
-                height: "100%",
-                boxShadow: "0px 8px 24px 0px #DBDBDB85",
-              }}
-            >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="auto"
-                  image={feature.img}
-                  alt="green iguana"
-                />
-              </CardActionArea>
-            </Card>
-            <Stack
-              sx={{
-                display: "flex",
-                height: { xs: "auto", sm: "auto", md: "200px" },
-                alignItems: { xs: "start", sm: "start", md: "center" },
-                flexDirection: "row",
-              }}
-            >
-              <Stack
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  gap: { xs: 0, sm: 0, md: 2 },
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "blue",
-                    width: 20,
-                    height: 20,
-                    borderRadius: "50%",
-                    display: { xs: "none", sm: "none", md: "flex" },
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "white",
-                  }}
-                >
-                  <Typography fontSize={"12px"}>{feature.id}</Typography>
-                </Box>
-                <Stack
-                  sx={{
-                    width: { xs: "auto", sm: "auto", md: "340px" },
-                  }}
-                >
-                  <Box
-                    sx={{
-                      backgroundColor: "blue",
-                      width: 20,
-                      height: 20,
-                      borderRadius: "50%",
-                      display: { xs: "flex", sm: "flex", md: "none" },
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: "white",
-                      mt: 2,
-                    }}
-                  >
-                    <Typography fontSize={"12px"}>{feature.id}</Typography>
-                  </Box>
-                  <Typography variant="p" component="div" fontWeight={"bold"}>
-                    {feature.name}
-                  </Typography>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                image={feature.img}
+                alt={feature.name}
+                sx={{ objectFit: "contain", p: 2 }}
+              />
+            </CardActionArea>
+          </Card>
 
-                  <Typography variant="p" component="div">
-                    {feature.desc}
-                  </Typography>
-                </Stack>
-              </Stack>
-            </Stack>
+          {/* Texte */}
+          <Stack spacing={1} maxWidth={isMd ? 500 : "100%"}>
+            <Box
+              sx={{
+                width: 28,
+                height: 28,
+                borderRadius: "50%",
+                backgroundColor: "primary.main",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "white",
+                fontWeight: "bold",
+                fontSize: "14px",
+              }}
+            >
+              {feature.id}
+            </Box>
+            <Typography variant="h6" fontWeight="bold">
+              {feature.name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {feature.desc}
+            </Typography>
           </Stack>
-          <Box />
         </Stack>
       ))}
     </Box>
   );
 };
+
 export default CardFeatures;
