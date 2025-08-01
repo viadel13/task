@@ -49,7 +49,7 @@ const Teams = () => {
                     <CardMedia
                       component="img"
                       sx={{
-                        height: { xs: "auto", sm: "auto", md: "350px" },
+                        height: { xs: "auto", sm: "auto", md: "auto" },
                         borderRadius: "18px",
                       }}
                       image={i.img}
