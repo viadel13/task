@@ -43,7 +43,7 @@ const Performance = () => {
               fontWeight={"bold"}
               sx={{ fontSize: { xs: "20px", sm: "25px", md: "30px" } }}
             >
-              100+
+              20+ 
             </Typography>
             <Typography
               variant="body"
@@ -55,7 +55,7 @@ const Performance = () => {
                 },
               }}
             >
-              Teams Members
+              Active Clients
             </Typography>
           </Stack>
           <Stack alignItems={"center"}>
@@ -64,7 +64,7 @@ const Performance = () => {
               fontWeight={"bold"}
               sx={{ fontSize: { xs: "20px", sm: "25px", md: "30px" } }}
             >
-              100+
+              50+
             </Typography>
             <Typography
               variant="body"
@@ -76,7 +76,7 @@ const Performance = () => {
                 },
               }}
             >
-              Teams Members
+              Client Satisfaction
             </Typography>
           </Stack>
         </Stack>

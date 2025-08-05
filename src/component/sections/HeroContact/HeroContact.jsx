@@ -40,7 +40,7 @@ const HeroContact = () => {
                                 },
                             }}
                         >
-                            Prenez contact avec nous des aujourd'hui: TaskDev
+                            Contact us today: TaskDev
                         </Typography>
 
                     }
@@ -76,7 +76,10 @@ const HeroContact = () => {
                     img={
                         <Stack>
                             <Typography>
-                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                Have a question, suggestion, or partnership idea? We're here to help!
+                                Whether you're a freelancer, a growing startup, or a large team looking to optimize task management, our experts are ready to support you.
+                                Reach out today and let's build better productivity, together.
+
                             </Typography>
                         </Stack>
                     }

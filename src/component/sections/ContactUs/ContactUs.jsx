@@ -23,7 +23,9 @@ const ContactUs = () => {
                                 Let's Talk !
                             </Typography>
                             <Typography variant="body1" color="rgba(0, 0, 0, 0.65)" mb={2}>
-                                There are many variations of passages of Lorem Ipsum available<br /> but the majority
+                                Whether you have a question about features, prices, a demonstration or anything else, our team is here to help.
+                                Fill in the form and we'll get back to you as soon as possible.
+                                At TaskDev, we believe that a good collaboration starts with a simple conversation.
                             </Typography>
                             <Divider />
                         </Stack>

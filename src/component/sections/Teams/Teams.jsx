@@ -30,11 +30,11 @@ const Teams = () => {
               Crafting Excellence as a Team
             </Typography>
             <Typography variant={"body1"} color="rgba(0, 0, 0, 0.65)">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-              <br /> The point of using Lorem Ipsum is that it has a
-              more-or-less normal distribution of letters, as opposed to using
-              Content here, content here
+              Behind every great task completed is a great team.
+              Our strength lies in the synergy between our people — developers, marketers, designers, and project leads — all working together to create a seamless and powerful task management experience.
+              From strategy to execution, every member contributes to building a solution that helps teams around the world stay organized, focused, and productive.
+
+
             </Typography>
           </Stack>
         </Stack>

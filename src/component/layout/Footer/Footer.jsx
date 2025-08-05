@@ -1,7 +1,7 @@
 import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { Icon } from "@iconify/react";
-import { Links } from "../../../constant/links";
+import { Links, LinksLegal } from "../../../constant/links";
 import ButtonUi from "../../ui/ButtonUi/ButtonUi";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
@@ -42,9 +42,9 @@ const Footer = () => {
                                 height="38"
                             />
                             <Typography variant="body1" color={"white"}>
-                                Lorem ipsum dolor sit amet consectetur. Vivamus risus purus sit
-                                netus sit at. Habitant pharetra facilisis a arcu egestas semper
-                                curabitur elementum lobortis.
+                                TaskDev simplifies the way you organize, track, and complete your work.
+                                Join thousands of users who trust us to boost productivity and bring clarity to their daily tasks.
+                                Your goals, our tools — success made simple.
                             </Typography>
 
                             <Stack direction={"row"} alignItems={"center"} spacing={0}>
@@ -138,9 +138,8 @@ const Footer = () => {
 
                             <Stack sx={{ color: "background.default" }} spacing={2}>
                                 <Typography variant="body1" fontWeight={"bold"} mb={4}>
-                                    Site Map
-                                </Typography>
-                                {Links.map((Links, index) => (
+                                    Legal                                </Typography>
+                                {LinksLegal.map((Links, index) => (
                                     <Typography key={index} variant="body1">
                                         {Links.name}
                                     </Typography>

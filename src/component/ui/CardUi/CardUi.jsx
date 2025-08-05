@@ -44,7 +44,7 @@ const CardUi = () => {
                 <Stack alignItems={"center"}>
                   <Avatar
                     alt="Remy Sharp"
-                    src="./logo/dev.jpeg"
+                    src={client.image}
                     sx={{ width: 60, height: 60 }}
                   />
                 </Stack>

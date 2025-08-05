@@ -7,6 +7,12 @@ export const Links = [
   { name: "Contact", link: "/contact" },
 ];
 
+
+export const LinksLegal = [
+  { name: "Privacy Policy", link: "#" },
+  { name: "Terms of Services ", link: "#" },
+];
+
 export const LogosCompanies = [
   { name: "Apple", link: "/logo/Apple.png" },
   { name: "Google", link: "/logo/Google.png" },
@@ -18,10 +24,10 @@ export const LogosCompanies = [
 
 export const Clients = [
   { name: "dev", link: "/logo/dev.jpeg" },
-  { name: "dev", link: "/logo/dev.jpeg" },
-  { name: "dev", link: "/logo/dev.jpeg" },
-  { name: "dev", link: "/logo/dev.jpeg" },
-  { name: "dev", link: "/logo/dev.jpeg" },
+  { name: "dev", link: "/logo/Profil.jpg" },
+  { name: "dev", link: "/logo/Michael.jpg" },
+  { name: "dev", link: "/logo/Christina.jpg" },
+  { name: "dev", link: "/logo/Pierre.jpg" },
 ];
 
 export const Faq = [
@@ -62,37 +68,37 @@ export const ClientsTestimonials = [
     name: "Delvia",
     image: "./logo/dev.jpeg",
     pseudo: "dev@78",
-    bio: "Grâce à TaskDev, j’ai enfin trouvé une manière simple et claire de suivre mes projets.L’interface est fluide, et je peux collaborer sans stress avec mon équipe.",
+    bio: "Thanks to TaskDev, I've finally found a clear and simple way of keeping track of my projects, the interface is fluid and I can work with my team without stress.",
   },
   {
-    name: "Delvia",
-    image: "./logo/dev.jpeg",
+    name: "Mira",
+    image: "./logo/Profil.jpg",
     pseudo: "mira.design",
-    bio: "J’utilise TaskDev pour gérer mes projets de design et mes deadlines clients.L’outil est propre, ergonomique et très fiable.",
+    bio: "I use TaskDev to manage my design projects and client deadlines, and the tool is clean, ergonomic and very reliable.",
   },
   {
-    name: "Delvia",
-    image: "./logo/dev.jpeg",
+    name: "Nate",
+    image: "./logo/Michael.jpg",
     pseudo: "nate.tech",
-    bio: "La version gratuite de TaskDev suffit largement pour mes besoins perso. J’apprécie la fluidité d’utilisation et les options de partage avec mes collègues.",
+    bio: "The free version of TaskDev is more than enough for my personal needs. I like the ease of use and the options for sharing with my colleagues.",
   },
   {
-    name: "Delvia",
-    image: "./logo/dev.jpeg",
+    name: "Lina",
+    image: "./logo/Christina.jpg",
     pseudo: "lina.codes",
-    bio: "Je suis développeuse freelance, et TaskDev est devenu mon allié quotidien. J’adore les rappels intelligents et la possibilité de synchroniser entre mes appareils.",
+    bio: "I'm a freelance developer, and TaskDev has become my daily ally. I love the smart reminders and the ability to synchronise between my devices.",
   },
   {
-    name: "Delvia",
-    image: "./logo/dev.jpeg",
+    name: "Sophie",
+    image: "./logo/Andrey.jpg",
     pseudo: "sophie_dev",
-    bio: "J’étais sceptique au début, mais TaskDev a complètement changé ma façon de travailler. J’ai retrouvé motivation et productivité.",
+    bio: "I was sceptical at first, but TaskDev has completely changed the way I work. I've regained my motivation and productivity.",
   },
   {
-    name: "Delvia",
-    image: "./logo/dev.jpeg",
+    name: "Jules",
+    image: "./logo/Pierre.jpg",
     pseudo: "jules_pm",
-    bio: "En tant que chef de projet, je cherchais une solution flexible et sécurisée. TaskDev m’a bluffé : tout est bien organisé, et je gagne un temps fou.",
+    bio: "As a project manager, I was looking for a flexible and secure solution. TaskDev blew me away: everything is well organised, and I save an incredible amount of time.",
   },
 ];
 

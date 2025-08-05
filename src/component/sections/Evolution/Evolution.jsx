@@ -87,17 +87,9 @@ const Evolution = () => {
                     fontSize: { xs: 15, sm: 15, md: 18 },
                   }}
                 >
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
+                  Our mission is to simplify the way teams and individuals manage their work.
+                  We provide a smart, intuitive, and collaborative task management solution that helps you stay focused, organized, and efficient — no matter where you are.
+                  By combining user-friendly design with powerful features, we help people turn their goals into results, one task at a time.
                 </Typography>
                 <Stack spacing={1}>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -109,7 +101,7 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
+                      Simplicity meets productivity
                     </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -121,8 +113,7 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
-                    </Typography>
+                      Collaboration without complexity                    </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
                     <Icon
@@ -133,8 +124,7 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
-                    </Typography>
+Respect for your time and focus                    </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
                     <Icon
@@ -145,8 +135,7 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
-                    </Typography>
+Continuous improvement based on real needs                    </Typography>
                   </Stack>
                 </Stack>
               </Stack>
@@ -206,17 +195,11 @@ const Evolution = () => {
                     fontSize: { xs: 15, sm: 15, md: 18 },
                   }}
                 >
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
+                  We envision a world where every task has its place, every goal a clear path, and every team the tools to work in harmony.
+                  Our goal is to become the preferred task management solution for professionals, teams, and organizations worldwide — empowering them to do more, stress less, and achieve better outcomes.
+                  With a focus on usability, automation, and integration, we’re building the future of smart work.
+
+                  
                 </Typography>
                 <Stack spacing={1}>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -228,7 +211,19 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
+Seamless task and project tracking                    </Typography>
+                  </Stack>
+                  <Stack direction={"row"} alignItems={"center"} spacing={1}>
+                    <Icon
+                      icon="line-md:check-all"
+                      width="24"
+                      height="24"
+                      color="#15156D"
+                    />
+
+                    <Typography color="rgba(0, 0, 0, 0.65)">
+                      Empowered, autonomous teams
+
                     </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -240,7 +235,8 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
+                      Integration with your favorite tools
+
                     </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -252,19 +248,8 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
-                    </Typography>
-                  </Stack>
-                  <Stack direction={"row"} alignItems={"center"} spacing={1}>
-                    <Icon
-                      icon="line-md:check-all"
-                      width="24"
-                      height="24"
-                      color="#15156D"
-                    />
+                      Smart reminders and automation
 
-                    <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
                     </Typography>
                   </Stack>
                 </Stack>
@@ -325,17 +310,9 @@ const Evolution = () => {
                     fontSize: { xs: 15, sm: 15, md: 18 },
                   }}
                 >
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
+                  What started as a simple idea — helping people manage their day better — has grown into a complete task management platform used by teams across industries.
+                  From our first prototype to today’s feature-rich app, we’ve listened to users, learned from their needs, and evolved.
+                  Our journey is guided by one goal: making work easier, clearer, and more satisfying for everyone.
                 </Typography>
                 <Stack spacing={1}>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -347,7 +324,8 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
+                      Initial launch with core features in 2025
+
                     </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -359,7 +337,8 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
+                      Cross-platform apps released in 2025
+
                     </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -371,7 +350,8 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
+                      100K+ tasks completed via our platform
+
                     </Typography>
                   </Stack>
                   <Stack direction={"row"} alignItems={"center"} spacing={1}>
@@ -383,7 +363,8 @@ const Evolution = () => {
                     />
 
                     <Typography color="rgba(0, 0, 0, 0.65)">
-                      Many desktop publishing packages and web page editors
+                      Recognized by users for simplicity and impact
+
                     </Typography>
                   </Stack>
                 </Stack>
