@@ -43,6 +43,9 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
         <Button
           variant="outlined"
           disableElevation
+          onClick={() =>
+            (window.location.href = "https://task-todo-dusky.vercel.app/")
+          }
           sx={{
             borderRadius: "8px",
             padding: "12px 20px",

@@ -108,6 +108,9 @@ const Navbar = () => {
                 padding: "12px 30px",
                 display: { xs: "none", sm: "none", md: "flex" },
               }}
+              onClick={() =>
+                (window.location.href = "https://task-todo-dusky.vercel.app/")
+              }
             />
             <IconButton
               size="large"

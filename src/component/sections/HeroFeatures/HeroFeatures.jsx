@@ -78,6 +78,9 @@ const HeroFeatures = () => {
             >
               <ButtonUi
                 variant={"contained"}
+                onClick={() =>
+                  (window.location.href = "https://task-todo-dusky.vercel.app/")
+                }
                 title={"Start now"}
                 styles={{
                   padding: "10px 15px",
