@@ -55,6 +55,7 @@ const Navbar = () => {
               style={{
                 cursor: "pointer",
               }}
+              draggable={false}
             />
 
             <Stack
