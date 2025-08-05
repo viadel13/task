@@ -24,7 +24,7 @@ export const LogosCompanies = [
 export const Clients = [
   { name: "dev", link: "/logo/dev.jpeg" },
   { name: "dev", link: "/logo/Profil.jpg" },
-  { name: "dev", link: "/logo/msichael.jpg" },
+  { name: "dev", link: "/logo/Michael.jpg" },
   { name: "dev", link: "/logo/Christina.jpg" },
   { name: "dev", link: "/logo/Pierre.jpg" },
 ];
