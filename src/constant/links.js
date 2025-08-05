@@ -7,7 +7,6 @@ export const Links = [
   { name: "Contact", link: "/contact" },
 ];
 
-
 export const LinksLegal = [
   { name: "Privacy Policy", link: "#" },
   { name: "Terms of Services ", link: "#" },
@@ -72,31 +71,31 @@ export const ClientsTestimonials = [
   },
   {
     name: "Mira",
-    image: "./logo/Profil.jpg",
+    image: "/logo/Profil.jpg",
     pseudo: "mira.design",
     bio: "I use TaskDev to manage my design projects and client deadlines, and the tool is clean, ergonomic and very reliable.",
   },
   {
     name: "Nate",
-    image: "./logo/Michael.jpg",
+    image: "/logo/michael.jpg",
     pseudo: "nate.tech",
     bio: "The free version of TaskDev is more than enough for my personal needs. I like the ease of use and the options for sharing with my colleagues.",
   },
   {
     name: "Lina",
-    image: "./logo/Christina.jpg",
+    image: "/logo/Christina.jpg",
     pseudo: "lina.codes",
     bio: "I'm a freelance developer, and TaskDev has become my daily ally. I love the smart reminders and the ability to synchronise between my devices.",
   },
   {
     name: "Sophie",
-    image: "./logo/Andrey.jpg",
+    image: "/logo/Andrey.jpg",
     pseudo: "sophie_dev",
     bio: "I was sceptical at first, but TaskDev has completely changed the way I work. I've regained my motivation and productivity.",
   },
   {
     name: "Jules",
-    image: "./logo/Pierre.jpg",
+    image: "/logo/Pierre.jpg",
     pseudo: "jules_pm",
     bio: "As a project manager, I was looking for a flexible and secure solution. TaskDev blew me away: everything is well organised, and I save an incredible amount of time.",
   },
