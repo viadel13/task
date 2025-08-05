@@ -77,7 +77,7 @@ export const ClientsTestimonials = [
   },
   {
     name: "Nate",
-    image: "/logo/michael.jpg",
+    image: "/logo/Michael.jpg",
     pseudo: "nate.tech",
     bio: "The free version of TaskDev is more than enough for my personal needs. I like the ease of use and the options for sharing with my colleagues.",
   },
